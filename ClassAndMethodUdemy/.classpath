@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry excluding="collections/|Equals/|Product/|Purchase/|Aluno/|Car/" kind="src" path=""/>
+	<classpathentry kind="src" path="Aluno"/>
+	<classpathentry kind="src" path="Car"/>
+	<classpathentry kind="src" path="collections"/>
+	<classpathentry kind="src" path="Purchase"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

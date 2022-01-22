@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.2" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd">
+	
+	<!-- Meu banco de dados
+	<persistence-unit name="loja_virtual" transaction-type="RESOURCE_LOCAL">
+	-->
+	<persistence-unit name="loja" transaction-type="RESOURCE_LOCAL">
+		<!-- Mostrar para a JPA as minha entidades, no caso do hibernate ele não precisa dessa declaração-->
+		<!--class>br.com.alura.loja.modelo.Produto/<class>-->
+		<properties>
+			<!--Conexão com h2 -->
+			<property name="javax.persistence.jdbc.driver" value="org.h2.Driver" />
+			<property name="javax.persistence.jdbc.url" value="jdbc:h2:mem:loja" />
+			<property name="javax.persistence.jdbc.user" value="sa" />
+			<property name="javax.persistence.jdbc.password" value="" />
+			
+			
+			<property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect" />
+			<property name="hibernate.show_sql" value="true" />
+			<property name="hibernate.format_sql" value="true" />
+			<property name="hibernate.hbm2ddl.auto" value="update"/>
+
+			<!--Conexão com MySQL -->
+			<!--
+			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
+			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/loja_virtual" />
+			<property name="javax.persistence.jdbc.user" value="root" />
+			<property name="javax.persistence.jdbc.password" value="Qweasdzxc123" />
+			-->
+			
+			<!-- propriedades do hibernate -->
+			<!--
+			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5InnoDBDialect" />
+			<property name="hibernate.show_sql" value="true" />
+			<property name="hibernate.format_sql" value="true" />
+			-->
+
+			<!-- atualiza o banco, gera as tabelas se for preciso -->
+			<!--
+			<property name="hibernate.hbm2ddl.auto" value="update" />
+			-->
+
+		</properties>
+	</persistence-unit>
+</persistence>

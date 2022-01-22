@@ -1,0 +1,5 @@
+Lazy do inglês “preguiçoso, lento” e Eager que significa “ansioso, impaciente”.
+
+Lazy acontece nos relacionemtos ...ToMany - Com isso ele só irá dar join caso a sua consulta precise de dados da outra tabela.
+
+Eager acontece nos relacionemtos ...ToOne - Já nesse caso, mesmo que você não precise ds os dados da outra tabela, ele irá dar join e coletar todos aqueles dados da outra tabela.
